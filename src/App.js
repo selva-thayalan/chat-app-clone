@@ -3,7 +3,7 @@ import MainView from './Components/MainView';
 
 function App() {
   return (
-    <div className="App">
+    <div className="full-size">
       <MainView/>
     </div>
   );

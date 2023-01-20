@@ -1,38 +1,135 @@
-.App {
-  text-align: center;
+.full-size{
+    width: 100%;
+    height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.size_65{
+  height: 65px;
+  width: 65px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.size_60{
+  height: 60px;
+  width: 60px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.disp_inline{
+  display: inline-block;
+}
+
+.l_h_1{
+  line-height: 1;
+}
+
+.f_r{
+  float: right;
+}
+
+.s_f_size{
+  font-size: 12px;
+}
+
+.p_5{
+  padding: 5px;
+}
+
+.m_r_5{
+  margin-right: 5px;
+}
+
+.abs_cntr{
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+.flex_cntr{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.pos_rel{
+  position: relative;
+}
+
+.main-text{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.sub-text{
+  color: #828181;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.disp_flex{
+  display: flex;
+}
+
+.col_align{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.row_align{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.main-area{
+  overflow: hidden;
+}
+
+/* chat list related styles */
+.chat-list{
+  height: 100%;
+  width: 40%;
+  min-width: 250px;
+  max-width: 400px;
+  background-color: #2f2f2f;
+  overflow-y: auto;
+}
+
+/* chat view related styles */
+.chat-view-cont{
+  flex: 1;
+}
+
+/*chat card styles*/
+.chat-card{
+  width: 100%;
+  height: 75px;
+  display: flex;
+  align-items: center;
+}
+
+.chat-avatar{
+  color: whitesmoke;
+  font-size: 2em;
+  font-weight: 700;
+  border-radius: 50px;
+  background-color: #8e8e8e;
+  text-align: center;
+}
+
+.card-details-cont{
+  height: 100%;
+  width: calc(100% - 75px);
+  border-bottom: 1px solid #828181;
+}
+
+.card-sub-details, .lat-message-text{
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* chat header related styles */
+.chat-header{
+  height: 60px;
+  width: 100%;
+  background-color: #616060;
 }
