@@ -2,8 +2,6 @@ import React from 'react';
 import ChatList from './ChatList';
 import ChatView from './ChatView';
 
-import './MainView.css'
-
 class MainView extends React.Component{
     constructor(props){
         super(props);
