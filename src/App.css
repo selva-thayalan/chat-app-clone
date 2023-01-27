@@ -78,16 +78,28 @@
   flex-wrap: nowrap;
 }
 
+/* Common component styles */
+.header-comp{
+  height: 60px;
+  width: 100%;
+  background-color: #616060;
+}
+
 .main-area{
   overflow: hidden;
 }
 
-/* chat list related styles */
-.chat-list{
+.lhs-main-cont{
   height: 100%;
   width: 40%;
   min-width: 250px;
   max-width: 400px;
+}
+
+
+/* chat list related styles */
+.chat-list{
+  height: calc(100% - 60px);
   background-color: #2f2f2f;
   overflow-y: auto;
 }
@@ -128,8 +140,3 @@
 }
 
 /* chat header related styles */
-.chat-header{
-  height: 60px;
-  width: 100%;
-  background-color: #616060;
-}
